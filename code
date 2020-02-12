@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+	scanf("%d",&n);
+	int m,c,x,y,z,f=0,s=0;
+	scanf("%d %d",&m,&c);
+	while(n--)
+	{
+		scanf("%d %d %d",&x,&y,&z);	
+		if (y>m*x+c)
+		{
+			f=f+z;
+		}
+		else
+		{
+			s=s+z;
+		}
+	}
+
+	if (f>s)
+	{
+		printf("%d\n",f);
+	}
+	else
+	{
+		printf("%d\n",s);
+	}
+}
